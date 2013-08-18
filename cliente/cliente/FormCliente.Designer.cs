@@ -48,8 +48,8 @@
             // 
             // chat
             // 
-            this.chat.Enabled = false;
             this.chat.BackColor = System.Drawing.SystemColors.Window;
+            this.chat.Enabled = false;
             this.chat.Location = new System.Drawing.Point(12, 40);
             this.chat.Name = "chat";
             this.chat.Size = new System.Drawing.Size(233, 153);
@@ -66,8 +66,8 @@
             // 
             // enviarBoton
             // 
-            this.enviarBoton.Enabled = false;
             this.enviarBoton.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.enviarBoton.Enabled = false;
             this.enviarBoton.Location = new System.Drawing.Point(265, 208);
             this.enviarBoton.Name = "enviarBoton";
             this.enviarBoton.Size = new System.Drawing.Size(75, 23);
@@ -188,7 +188,7 @@
             this.ayudanteSalaBoton.Enabled = false;
             this.ayudanteSalaBoton.Location = new System.Drawing.Point(495, 178);
             this.ayudanteSalaBoton.Name = "ayudanteSalaBoton";
-            this.ayudanteSalaBoton.Size = new System.Drawing.Size(83, 35);
+            this.ayudanteSalaBoton.Size = new System.Drawing.Size(92, 35);
             this.ayudanteSalaBoton.TabIndex = 15;
             this.ayudanteSalaBoton.Text = "Sala de Ayudantes";
             this.ayudanteSalaBoton.UseVisualStyleBackColor = true;

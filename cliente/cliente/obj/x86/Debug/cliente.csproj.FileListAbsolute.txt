@@ -16,3 +16,6 @@ C:\Users\Gabriela\Dropbox\SD\Lab 2\cliente\cliente\obj\x86\Debug\cliente.csprojR
 C:\Users\Gabriela\Dropbox\SD\Lab 2\cliente\cliente\obj\x86\Debug\cliente.FormCliente.resources
 C:\Users\Gabriela\Dropbox\SD\Lab 2\cliente\cliente\obj\x86\Debug\cliente.Properties.Resources.resources
 C:\Users\Gabriela\Dropbox\SD\Lab 2\cliente\cliente\obj\x86\Debug\cliente.csproj.GenerateResource.Cache
+C:\Users\Gabriela\Documents\GitHub\Lab2_SD\cliente\cliente\bin\Debug\cliente.exe.config
+C:\Users\Gabriela\Documents\GitHub\Lab2_SD\cliente\cliente\obj\x86\Debug\cliente.exe
+C:\Users\Gabriela\Documents\GitHub\Lab2_SD\cliente\cliente\obj\x86\Debug\cliente.pdb

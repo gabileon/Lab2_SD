@@ -1,0 +1,8 @@
+C:\Users\Macarena\Dropbox\SD\Lab 2\Servidor\bin\Servidor.dll
+C:\Users\Macarena\Dropbox\SD\Lab 2\Servidor\bin\Servidor.pdb
+C:\Users\Macarena\Dropbox\SD\Lab 2\Servidor\obj\Debug\Servidor.dll
+C:\Users\Macarena\Dropbox\SD\Lab 2\Servidor\obj\Debug\Servidor.pdb
+C:\Users\Gabriela\Dropbox\SD\Lab 2\Servidor\bin\Servidor.dll
+C:\Users\Gabriela\Dropbox\SD\Lab 2\Servidor\bin\Servidor.pdb
+C:\Users\Gabriela\Dropbox\SD\Lab 2\Servidor\obj\Debug\Servidor.dll
+C:\Users\Gabriela\Dropbox\SD\Lab 2\Servidor\obj\Debug\Servidor.pdb

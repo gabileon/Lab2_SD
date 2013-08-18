@@ -19,3 +19,6 @@ C:\Users\Gabriela\Dropbox\SD\Lab 2\cliente\cliente\obj\x86\Debug\cliente.csproj.
 C:\Users\Gabriela\Documents\GitHub\Lab2_SD\cliente\cliente\bin\Debug\cliente.exe.config
 C:\Users\Gabriela\Documents\GitHub\Lab2_SD\cliente\cliente\obj\x86\Debug\cliente.exe
 C:\Users\Gabriela\Documents\GitHub\Lab2_SD\cliente\cliente\obj\x86\Debug\cliente.pdb
+C:\Users\Macarena\Documents\GitHub\Lab2_SD\cliente\cliente\bin\Debug\cliente.exe.config
+C:\Users\Macarena\Documents\GitHub\Lab2_SD\cliente\cliente\obj\x86\Debug\cliente.exe
+C:\Users\Macarena\Documents\GitHub\Lab2_SD\cliente\cliente\obj\x86\Debug\cliente.pdb

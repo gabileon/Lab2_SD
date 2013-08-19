@@ -113,6 +113,9 @@ namespace cliente
                         if ((password.Equals(pass)))
                             {
                                 conectar(nombre, pass);
+                                
+                            //Hacer qe el usuario y el pass no pueda ser editados
+
                             }
                             else
                             {
@@ -158,6 +161,11 @@ namespace cliente
                 conectado = true;
             }*/
             return 0;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
 
     }

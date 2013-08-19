@@ -44,6 +44,8 @@
             this.desconectarBoton = new System.Windows.Forms.Button();
             this.cambioSala = new System.Windows.Forms.Label();
             this.ayudanteSalaBoton = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // chat
@@ -87,7 +89,7 @@
             // salirBoton
             // 
             this.salirBoton.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.salirBoton.Location = new System.Drawing.Point(480, 243);
+            this.salirBoton.Location = new System.Drawing.Point(450, 244);
             this.salirBoton.Name = "salirBoton";
             this.salirBoton.Size = new System.Drawing.Size(75, 23);
             this.salirBoton.TabIndex = 4;
@@ -116,7 +118,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(397, 40);
+            this.label3.Location = new System.Drawing.Point(397, 17);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 7;
@@ -125,7 +127,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(411, 66);
+            this.label4.Location = new System.Drawing.Point(411, 43);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 8;
@@ -133,7 +135,7 @@
             // 
             // usuario
             // 
-            this.usuario.Location = new System.Drawing.Point(480, 63);
+            this.usuario.Location = new System.Drawing.Point(480, 40);
             this.usuario.Name = "usuario";
             this.usuario.Size = new System.Drawing.Size(107, 20);
             this.usuario.TabIndex = 9;
@@ -141,7 +143,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(411, 99);
+            this.label5.Location = new System.Drawing.Point(411, 76);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 13);
             this.label5.TabIndex = 10;
@@ -149,14 +151,14 @@
             // 
             // contrasena
             // 
-            this.contrasena.Location = new System.Drawing.Point(481, 96);
+            this.contrasena.Location = new System.Drawing.Point(481, 73);
             this.contrasena.Name = "contrasena";
             this.contrasena.Size = new System.Drawing.Size(106, 20);
             this.contrasena.TabIndex = 11;
             // 
             // conectarBoton
             // 
-            this.conectarBoton.Location = new System.Drawing.Point(400, 135);
+            this.conectarBoton.Location = new System.Drawing.Point(400, 112);
             this.conectarBoton.Name = "conectarBoton";
             this.conectarBoton.Size = new System.Drawing.Size(75, 23);
             this.conectarBoton.TabIndex = 12;
@@ -167,7 +169,7 @@
             // desconectarBoton
             // 
             this.desconectarBoton.Enabled = false;
-            this.desconectarBoton.Location = new System.Drawing.Point(495, 135);
+            this.desconectarBoton.Location = new System.Drawing.Point(495, 112);
             this.desconectarBoton.Name = "desconectarBoton";
             this.desconectarBoton.Size = new System.Drawing.Size(92, 23);
             this.desconectarBoton.TabIndex = 13;
@@ -177,7 +179,7 @@
             // cambioSala
             // 
             this.cambioSala.AutoSize = true;
-            this.cambioSala.Location = new System.Drawing.Point(397, 189);
+            this.cambioSala.Location = new System.Drawing.Point(397, 214);
             this.cambioSala.Name = "cambioSala";
             this.cambioSala.Size = new System.Drawing.Size(85, 13);
             this.cambioSala.TabIndex = 14;
@@ -186,12 +188,31 @@
             // ayudanteSalaBoton
             // 
             this.ayudanteSalaBoton.Enabled = false;
-            this.ayudanteSalaBoton.Location = new System.Drawing.Point(495, 178);
+            this.ayudanteSalaBoton.Location = new System.Drawing.Point(495, 203);
             this.ayudanteSalaBoton.Name = "ayudanteSalaBoton";
             this.ayudanteSalaBoton.Size = new System.Drawing.Size(92, 35);
             this.ayudanteSalaBoton.TabIndex = 15;
             this.ayudanteSalaBoton.Text = "Sala de Ayudantes";
             this.ayudanteSalaBoton.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(401, 165);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(94, 13);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Si no eres usuario,";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(495, 161);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(92, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Registrate";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormCliente
             // 
@@ -199,6 +220,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(599, 278);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.ayudanteSalaBoton);
             this.Controls.Add(this.cambioSala);
             this.Controls.Add(this.desconectarBoton);
@@ -240,6 +263,8 @@
         private System.Windows.Forms.Button desconectarBoton;
         private System.Windows.Forms.Label cambioSala;
         private System.Windows.Forms.Button ayudanteSalaBoton;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button1;
     }
 }
 

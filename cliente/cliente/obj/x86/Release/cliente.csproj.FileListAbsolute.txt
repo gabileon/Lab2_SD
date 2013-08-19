@@ -1,0 +1,13 @@
+C:\Users\Gabriela\Documents\GitHub\Lab2_SD\cliente\cliente\bin\Release\cliente.exe.config
+C:\Users\Gabriela\Documents\GitHub\Lab2_SD\cliente\cliente\bin\Release\cliente.exe
+C:\Users\Gabriela\Documents\GitHub\Lab2_SD\cliente\cliente\bin\Release\cliente.XmlSerializers.dll
+C:\Users\Gabriela\Documents\GitHub\Lab2_SD\cliente\cliente\bin\Release\cliente.pdb
+C:\Users\Gabriela\Documents\GitHub\Lab2_SD\cliente\cliente\bin\Release\MySql.Data.dll
+C:\Users\Gabriela\Documents\GitHub\Lab2_SD\cliente\cliente\obj\x86\Release\cliente.csprojResolveAssemblyReference.cache
+C:\Users\Gabriela\Documents\GitHub\Lab2_SD\cliente\cliente\obj\x86\Release\cliente.FormCliente.resources
+C:\Users\Gabriela\Documents\GitHub\Lab2_SD\cliente\cliente\obj\x86\Release\cliente.FormRegistro.resources
+C:\Users\Gabriela\Documents\GitHub\Lab2_SD\cliente\cliente\obj\x86\Release\cliente.Properties.Resources.resources
+C:\Users\Gabriela\Documents\GitHub\Lab2_SD\cliente\cliente\obj\x86\Release\cliente.csproj.GenerateResource.Cache
+C:\Users\Gabriela\Documents\GitHub\Lab2_SD\cliente\cliente\obj\x86\Release\cliente.exe
+C:\Users\Gabriela\Documents\GitHub\Lab2_SD\cliente\cliente\obj\x86\Release\cliente.pdb
+C:\Users\Gabriela\Documents\GitHub\Lab2_SD\cliente\cliente\obj\x86\Release\cliente.XmlSerializers.dll

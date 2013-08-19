@@ -5,6 +5,7 @@ using System.Threading;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using cliente.servicioChat;
+using MySql.Data.MySqlClient;
 
 namespace cliente
 {
@@ -35,6 +36,14 @@ namespace cliente
 
         //contador
         int id = 1000;
+        
+        //DATOS PARA CONEXION DE BD "SD"//
+        public MySqlConnection conexion;
+        private string sentencia;
+        private MySqlCommand ejecutar;
+        private MySqlDataAdapter dr;
+        private string valor;
+        /********/
 
         public FormCliente()
         {
@@ -49,6 +58,17 @@ namespace cliente
             InitializeComponent();
         }
 
+        public void Conexion()
+        {
+
+            string servidor = "localhost";
+            string baseDatos = "sd";
+            string usuario = "root";
+            string password = "";
+            string cadenadeConexion = "SERVER=" + servidor + ";" + "DATABASE=" + baseDatos + ";" + "UID=" + usuario + ";" + "PASSWORD=" + password + ";";
+            conexion = new MySqlConnection(cadenadeConexion);
+        }
+
         private void conectarBoton_Click(object sender, EventArgs e)
         {
             this.preConect();
@@ -59,6 +79,12 @@ namespace cliente
             //Determinar de forma local si el nombre y contraseña son validos
             string nombre = usuario.Text;
             string pass = contrasena.Text;
+            
+
+            //Se conecta a la BD//
+            Conexion();
+
+            //Comprobaciones//
 
             if (string.IsNullOrEmpty(nombre))
             {
@@ -72,7 +98,36 @@ namespace cliente
                 }
                 else
                 {
-                    conectar(nombre, pass);
+                    
+                    try
+                    {
+                        string password = null;
+                        string queryUsuario = "Select password from usuario where usuario.nickname='" + nombre+ "'";
+                        MySqlCommand ejecutar = new MySqlCommand(queryUsuario, conexion);
+                        conexion.Open();
+                        MySqlDataReader dr;
+                        dr = ejecutar.ExecuteReader();
+                        if (dr.Read())
+                            password = dr[0].ToString();
+                        {
+                        if ((password.Equals(pass)))
+                            {
+                                conectar(nombre, pass);
+                            }
+                            else
+                            {
+                                MessageBox.Show("Contraseña Incorrecta");
+                            }
+                        }
+                    }
+                    catch (Exception er)
+                    {
+                        conexion.Close();
+                        MessageBox.Show("No existe usuario");
+                       
+
+                    }
+
                 }
             }
         }

@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using ServicioChat = cliente.servicioChat
 
 namespace cliente
 {
     class Comunicacion
     {
-        static protected servicioChat.Service1 Servicio = new servicioChat.Service1();
+        static protected ServicioChat.Service1 Servicio = new ServicioChat.Service1();
         //----------------------------------------------------------------------------------------------
         public int login(String user, String pass, String ip)
         {

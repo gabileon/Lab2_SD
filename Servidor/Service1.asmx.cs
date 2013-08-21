@@ -31,58 +31,15 @@ namespace Servidor
             numeroDePuerto++;
             Cliente reg;
             //Validar ingreso del cliente
-            if (listaClientes.TryGetValue(nombre, out reg))
-            {
-                if (clientesConectados.Contains(reg))
-                {
-                    throw new Exception("Ya existe un usuario con esta cuenta");
-                }
-                if (pass != reg.pass)
-                {
-                    throw new Exception("Usuario o contraseña incorrectos");
-                }
-                listaClientes[nombre].ip = GetIP4Address();
-            }
-            else
-            {
-                string direccion = GetIP4Address();
-                reg = new Cliente(nombre, pass, direccion, numeroDePuerto);
-                listaClientes.Add(nombre, reg);
-            }
-
-            clientesConectados.Add(reg);
-            nombreClientesConectados.Add(reg.name);
-
-            //Asiganción del Cliente a la sala
-            string nombreSala = "Sala Principal";
-            List<Cliente> c = new List<Cliente>();
-            if (!salas.Contains(nombreSala))
-            {
-                salas.Add(nombreSala);
-                c.Add(listaClientes[nombre]);
-                salasClientes.Add(nombreSala, c);
-            }
-            else
-            {
-                c = salasClientes[nombreSala];
-                c.Add(listaClientes[nombre]);
-                salasClientes[nombreSala] = c;
-            }
-            //fin Asiganción del Cliente a la sala          
-            //Mensaje a enviar
-            string msg = getTimestamp(DateTime.Now) + " - " + nombre + " se ha conectado.";
-            //Definición de la informacion que se entregará al usuario como respuesta
-            Paquete ans = new Paquete();
-            ans.Mensaje = msg;
-            ans.ip = reg.ip;
-            ans.puerto = numeroDePuerto;
-            ans.cConectados = nombreClientesConectados;
-            ans.salas = salas;
-
-            //Enviar información a usuarios conectados y retornar paquete
-            Broadcast(msg, nombre);
-            return ans;
+            int registrado = buscarCliente(nombre);
         }
+
+        [WebMethod]
+        public int buscarCliente(string nombre)
+        {
+
+        }
+
 
 
         [Serializable]

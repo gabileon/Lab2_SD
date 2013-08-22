@@ -164,7 +164,6 @@
             this.conectarBoton.TabIndex = 12;
             this.conectarBoton.Text = "Conectarse";
             this.conectarBoton.UseVisualStyleBackColor = true;
-            this.conectarBoton.Click += new System.EventHandler(this.conectarBoton_Click);
             // 
             // desconectarBoton
             // 
